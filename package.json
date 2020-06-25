@@ -1,8 +1,8 @@
 {
   "name": "com.unity.assetgraph",
   "displayName": "Asset Graph",
-  "version": "1.6.0-preview",
-  "unity": "2018.3",
+  "version": "1.7.1-preview",
+  "unity": "2018.4",
   "description": "AssetGraph is a visual toolset lets you configure asset workflow visually in Unity. It is intended to create rule-based configuration using graphs to create and manage efficient workflow around assets.",
   "keywords": [
     "asset",
@@ -15,13 +15,12 @@
     "resources"
   ],
   "category": "Asset Bundles",
-  "dependencies": {
-    "com.unity.assetbundlebrowser": "1.7.0",
-    "com.unity.addressables": "1.2.3"
+  "upmCi": {
+    "footprint": "f9d66f1fde0ff903c6b10b1b2e4022f5ba4e6101"
   },
   "repository": {
+    "url": "https://github.com/Unity-Technologies/AssetGraph.git",
     "type": "git",
-    "url": "git@github.com:Unity-Technologies/AssetGraph.git",
-    "revision": "51f647e75dac665c42a54312fe27f0174468387d"
+    "revision": "9c0b1795c2123ad3d18335a3f63833506d9daa49"
   }
 }

@@ -4,6 +4,28 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.7.1] - 2020-06-25
+### Changed
+- Removed dependency with AssetBundleBrowser and Addressables.
+- Relaxed minimum version required with Addressables from 1.7.5 to 1.6.0.
+
+### Fixed
+- Fixed issue that AddressableBuilder can not select BuilderScript when there is only one.
+
+
+## [1.7.0] - 2020-04-03
+### Changed
+- Added FileOperation node.
+- Added ImportUnityPackage node.
+- Added ExportAsUnityPackage node.
+- Added AddressableBuilder node.
+- Suppress hidden graphs from Default AssetBundle Graph in Project Setting.
+- Upgraded Addressables version (1.2.3 -> 1.7.5)
+
+### Fixed
+- Fixed issue that graph is unable to execute when broken event is recorded. (#142)
+- Fixed Extract Shared Assets does not correctly find shared assets among variants.
+
 ## [1.6.0] - 2019-09-14
 ### Changed
 - Added Animation Import Overwrite Options to let user decide or skip overwriting AnimationClip Settings and Human Descriptions. (#104)

@@ -1,21 +1,32 @@
-#AssetGraph User Manual
-Version 1.5
-
 # Introduction 
+
+![alt_text](images/top.png "image_tooltip")
 
 AssetGraph is a tool that aims to reduce the workload needed to build workflows around asset importing, building Asset Bundles and building Player Apps. With this tool, you can build workflows to create, modify, and change asset settings graphically, and even automate them, thus freeing designers and artists from repetitive tasks during game development.
 
 
 ## Supported Unity Versions 
 
-Unity 2018.3.14f1 or higher. 
+Unity 2018.4.2f1 or higher. For older Unity, use the older version of AssetGraph.
+
+# Changelogs
+
+You can find bug fixes and changes in [ChangeLog](https://github.com/Unity-Technologies/AssetGraph/blob/1.7/release/CHANGELOG.md). 
 
 
-## Older versions 
+# Install 
+
+You can install AssetGraph from Unity Package Manager. 
+
+Open Package Manager from Window > Package Manager menu and find AssetGraph package, and press Install button.
 
 
-*   [Version 1.4 docs](https://docs.google.com/document/d/1O6REmpJPOBo4Y-Ii9XzopRFW1Ky4ahr47O5knJkSTQM)
-*   [Version 1.3 docs](https://docs.google.com/document/d/1Al_1pJ7a-7lHu9dPrpWFjm9UCUpyMwmutopLHYCoSOI)
+
+
+
+
+![alt_text](images/image1.png "image_tooltip")
+
 
 
 # Interface 
@@ -27,7 +38,10 @@ The Graph Editor Window is the workbench window. Here you can view, edit and bui
 
 
 
-![alt_text](images/AssetGraph-User0.png "image_tooltip")
+
+
+
+![alt_text](images/image2.png "image_tooltip")
 
 
 
@@ -47,10 +61,13 @@ The Graph Editor Window is the workbench window. Here you can view, edit and bui
 
 
 
-![alt_text](images/AssetGraph-User1.png "image_tooltip")
 
 
-1.      Select which graph to open in graph editor.
+
+![alt_text](images/image3.png "image_tooltip")
+
+
+1.      Select which graph to open in the graph editor.
 
 2.      Create a new graph asset.
 
@@ -61,7 +78,10 @@ The Graph Editor Window is the workbench window. Here you can view, edit and bui
 
 The Asset Log Window displays a list of asset modifications done in the AssetGraph node. It also shows you any errors that occured in the graphs. 
 
-![alt_text](images/AssetGraph-User2.png "image_tooltip")
+
+
+
+![alt_text](images/image4.png "image_tooltip")
 
 
 
@@ -79,7 +99,10 @@ The Asset Log Window displays a list of asset modifications done in the AssetGra
 
 
 
-![alt_text](images/AssetGraph-User3.png "image_tooltip")
+
+
+
+![alt_text](images/image5.png "image_tooltip")
 
 
 When an error occurs in AssetGraph, a notification appears in the Asset Log. The error display in the Asset Log shows a description of the error, as well as how to fix it.
@@ -99,7 +122,7 @@ The Batch Build Window allows you to run multiple graph lists on multiple platfo
 
 
 
-![alt_text](images/AssetGraph-User4.png "image_tooltip")
+![alt_text](images/image6.png "image_tooltip")
 
 
 In the Edit Tab you can edit Graph Collections that run simultaneously. 
@@ -119,7 +142,7 @@ In the Edit Tab you can edit Graph Collections that run simultaneously.
 
 
 
-![alt_text](images/AssetGraph-User5.png "image_tooltip")
+![alt_text](images/image7.png "image_tooltip")
 
 
 Run selected Graph Collections on the designated platforms from the Build Tab. 
@@ -147,7 +170,7 @@ To change the project settings, select  Menuー>Window>Asset Graph>Open Project 
 
 
 
-![alt_text](images/AssetGraph-User6.png "image_tooltip")
+![alt_text](images/image8.png "image_tooltip")
 
 
 Change settings related to building AssetBundles in the Asset Bundles Tab.
@@ -158,12 +181,13 @@ Change settings related to building AssetBundles in the Asset Bundles Tab.
 2. When integrated with AssetBundle Browser, this is the default Asset Bundle graph.
 
 
-### **The Execution Order Tab**
+### **The Execution Order Tab \
+**
 
 
 
 
-![alt_text](images/AssetGraph-User7.png "image_tooltip")
+![alt_text](images/image9.png "image_tooltip")
  
 
 In the Execution Order Tab, you can change the implementation order of AssetPostprocessor graphs. 
@@ -189,7 +213,7 @@ To create an AssetGraph graph, select the “Create” menu in the Project View,
 
 
 
-![alt_text](images/AssetGraph-User8.png "image_tooltip")
+![alt_text](images/image10.png "image_tooltip")
 
 
 When you have created an AssetBundle Graph asset, double click to open the Graph Editing Window to start editing. You can select and add new nodes by right-clicking the window.
@@ -204,7 +228,7 @@ You have to load assets to add processes to them. To load assets, right click th
 
 
 
-![alt_text](images/AssetGraph-User9.png "image_tooltip")
+![alt_text](images/image11.png "image_tooltip")
 
 
 When you’ve created your node, select the node and open the inspector. You can select directories by clicking on the Select button under Load From Directory. Try selecting from the directories under Assets.
@@ -230,7 +254,7 @@ You can group assets with AssetGraph. We recommend using this function when you 
 
 
 
-![alt_text](images/AssetGraph-User10.png "image_tooltip")
+![alt_text](images/image12.png "image_tooltip")
 
 
 Group By File Path is a node that groups assets by file path names. For example, if you have enemy character assets with names like “Pirate” and  “Vampire” under the Assets/Enemies directory, they will be split into two groups called “Pirate” and “Vampire”.
@@ -240,7 +264,7 @@ Group By File Path is a node that groups assets by file path names. For example,
 
 
 
-![alt_text](images/AssetGraph-User11.png "image_tooltip")
+![alt_text](images/image13.png "image_tooltip")
 
 
  Characters’ assets are based on directories, so you want to group them based on that
@@ -254,7 +278,7 @@ Group By File Path pattern matches file paths and groups them. As seen above, it
 
 
 
-![alt_text](images/AssetGraph-User12.png "image_tooltip")
+![alt_text](images/image14.png "image_tooltip")
 
 
 Inspector settings of Group By File Path
@@ -266,7 +290,7 @@ Create another node, try connecting it with the Group By File Path exportation, 
 
 
 
-![alt_text](images/AssetGraph-User13.png "image_tooltip")
+![alt_text](images/image15.png "image_tooltip")
 
 
 Grouping is done by matching the pattern “Enemies/*/” in an asset’s file path
@@ -288,7 +312,7 @@ To create an AssetBundle setting, right-click the graph and select [Configure Bu
 
 
 
-![alt_text](images/AssetGraph-User14.png "image_tooltip")
+![alt_text](images/image16.png "image_tooltip")
 
 
 
@@ -302,7 +326,7 @@ You have successfully set the bundle settings! We are now going to start prepari
 
 
 
-![alt_text](images/AssetGraph-User15.png "image_tooltip")
+![alt_text](images/image17.png "image_tooltip")
 
 
 
@@ -327,7 +351,7 @@ There are shared settings in AssetGraph projects. At this point the save locatio
 
 
 
-![alt_text](images/AssetGraph-User16.png "image_tooltip")
+![alt_text](images/image18.png "image_tooltip")
 
 
 
@@ -365,13 +389,13 @@ When creating asset bundles, you may include unwanted assets by mistake. To make
 Let’s take a look at the built-in nodes in AssetGraph.
 
 
-## Load From Directory
+## Load From Directory \
 
 
 
 
 
-![alt_text](images/AssetGraph-User17.png "image_tooltip")
+![alt_text](images/image19.png "image_tooltip")
  
 
 
@@ -388,7 +412,7 @@ This node loads assets from specified directories.
 
 
 
-![alt_text](images/AssetGraph-User18.png "image_tooltip")
+![alt_text](images/image20.png "image_tooltip")
 
 
 
@@ -407,7 +431,7 @@ This node loads assets from specified directories.
 
 
 
-![alt_text](images/AssetGraph-User19.png "image_tooltip")
+![alt_text](images/image21.png "image_tooltip")
 
 
 
@@ -423,7 +447,7 @@ This node loads assets from specified search filters. The format of the search f
 
 
 
-![alt_text](images/AssetGraph-User20.png "image_tooltip")
+![alt_text](images/image22.png "image_tooltip")
 
 
 
@@ -440,7 +464,7 @@ This node loads assets from specified search filters. The format of the search f
 
 
 
-![alt_text](images/AssetGraph-User21.png "image_tooltip")
+![alt_text](images/image23.png "image_tooltip")
 
 
 
@@ -457,7 +481,7 @@ The Last Imported Items node loads assets that have been imported recently. This
 
 
 
-![alt_text](images/AssetGraph-User22.png "image_tooltip")
+![alt_text](images/image24.png "image_tooltip")
 
 
 
@@ -475,7 +499,7 @@ Asset categorization in a Split By Filter node is done in a top-down manner. If 
 
 
 
-![alt_text](images/AssetGraph-User23.png "image_tooltip")
+![alt_text](images/image25.png "image_tooltip")
 
 
 
@@ -491,7 +515,7 @@ Asset categorization in a Split By Filter node is done in a top-down manner. If 
 
 
 
-![alt_text](images/AssetGraph-User24.png "image_tooltip")
+![alt_text](images/image26.png "image_tooltip")
 
 
 
@@ -507,7 +531,7 @@ This node creates groups by using file paths
 
 
 
-![alt_text](images/AssetGraph-User25.png "image_tooltip")
+![alt_text](images/image27.png "image_tooltip")
 
 
 
@@ -525,7 +549,7 @@ This node creates groups by using file paths
 
 
 
-![alt_text](images/AssetGraph-User26.png "image_tooltip")
+![alt_text](images/image28.png "image_tooltip")
 
 
 
@@ -546,7 +570,7 @@ The Group By Size node creates groupings based on size, so oftentimes the group 
 
 
 
-![alt_text](images/AssetGraph-User27.png "image_tooltip")
+![alt_text](images/image29.png "image_tooltip")
 
 
 
@@ -570,7 +594,9 @@ The Group By Size node creates groupings based on size, so oftentimes the group 
 
 
 
-![alt_text](images/AssetGraph-User28.png "image_tooltip") Introduction  
+![alt_text](images/image30.png "image_tooltip")
+  \
+Introduction  
 
 The Group By File node splits each asset passed through it into a separate, individual group.  For example, if 3 assets pass through this node, 3 groups will be created based on the Group Name Format setting, and each asset will be recorded in its own group. 
 
@@ -582,7 +608,7 @@ The Group By File node splits each asset passed through it into a separate, indi
 
 
 
-![alt_text](images/AssetGraph-User29.png "image_tooltip")
+![alt_text](images/image31.png "image_tooltip")
 
 
 
@@ -598,7 +624,9 @@ The Group By File node splits each asset passed through it into a separate, indi
 
 
 
-![alt_text](images/AssetGraph-User30.png "image_tooltip")Introduction  
+![alt_text](images/image32.png "image_tooltip")
+  \
+Introduction  
 
 The Create Prefab From Group node creates new prefabs from asset groups. Specify PrefabBuilder to create prefabs. To make prefabs that suit your project, add the necessary PrefabBuilders to your project. 
 
@@ -612,7 +640,7 @@ Please refer to Advanced Topics: [Creating Prefabs Automatically](#creating-pref
 
 
 
-![alt_text](images/AssetGraph-User31.png "image_tooltip")
+![alt_text](images/image33.png "image_tooltip")
 
 
 
@@ -637,7 +665,8 @@ There are two built-in Prefab Builders in AssetGraph.
 
 
 
-![alt_text](images/AssetGraph-User32.png "image_tooltip")
+![alt_text](images/image34.png "image_tooltip")
+  \
 “Replace GameObject by Name” creates new Prefabs by checking the passed-in GameObject’s Prefab for child GameObjects with the specified name, and replacing those child GameObjects with the specified Prefab.
 
 
@@ -654,7 +683,7 @@ There are two built-in Prefab Builders in AssetGraph.
 
 
 
-![alt_text](images/AssetGraph-User33.png "image_tooltip")
+![alt_text](images/image35.png "image_tooltip")
 
 
 “Replace With Incoming GameObject by Name” creates new Prefabs by checking the passed-in GameObject’s Prefab for child GameObjects with names that match the given GameObject.
@@ -671,7 +700,7 @@ There are two built-in Prefab Builders in AssetGraph.
 
 
 
-![alt_text](images/AssetGraph-User34.png "image_tooltip")
+![alt_text](images/image36.png "image_tooltip")
 
 
 
@@ -689,7 +718,7 @@ Please refer to Advanced Topics: [Creating Derived Assets Automatically](#creati
 
 
 
-![alt_text](images/AssetGraph-User35.png "image_tooltip")
+![alt_text](images/image37.png "image_tooltip")
 
 
 
@@ -715,7 +744,8 @@ AssetGraph includes one built-in AssetGenerator
 
 
 
-![alt_text](images/AssetGraph-User36.png "image_tooltip")
+![alt_text](images/image38.png "image_tooltip")
+ \
  TextureScaler receives texture assets and generates resized assets. 
 
 
@@ -740,7 +770,8 @@ Duplicate Asset generates copies of assets. There are no properties to set from 
 
 
 
-![alt_text](images/AssetGraph-User37.png "image_tooltip")
+![alt_text](images/image39.png "image_tooltip")
+ \
 Introduction  
 
 The Overwrite Import Setting node overwrites the import settings of the given assets. You can only change the import settings of models, textures, audio and video clips (Unity 5.6 and later) that have importers. The Overwrite Import Settings node can explicitly specify the Importer type and can also automatically set the importer type based on the type of asset given.
@@ -758,7 +789,7 @@ The Overwrite Import Setting node creates a small asset internally to store all 
 
 
 
-![alt_text](images/AssetGraph-User38.png "image_tooltip")
+![alt_text](images/image40.png "image_tooltip")
 
 
 Properties before setting importer type
@@ -772,7 +803,7 @@ Properties before setting importer type
 
 
 
-![alt_text](images/AssetGraph-User39.png "image_tooltip")
+![alt_text](images/image41.png "image_tooltip")
 
 
 
@@ -794,7 +825,7 @@ Properties before setting importer type
 
 
 
-![alt_text](images/AssetGraph-User40.png "image_tooltip")
+![alt_text](images/image42.png "image_tooltip")
 
 
 
@@ -807,7 +838,7 @@ The Modify Asset Directly node directly edits the properties of assets passed to
 
 
 
-![alt_text](images/AssetGraph-User41.png "image_tooltip")
+![alt_text](images/image43.png "image_tooltip")
 
 
 You can implement your own modifier to edit the assets you need for your project. Please refer to Advanced Topics: [How To Edit Assets On Your Own](#editing-assets) for more information on how to implement modifiers. 
@@ -821,7 +852,7 @@ You can implement your own modifier to edit the assets you need for your project
 
 
 
-![alt_text](images/AssetGraph-User42.png "image_tooltip")
+![alt_text](images/image44.png "image_tooltip")
 
 
 
@@ -839,7 +870,8 @@ You can implement your own modifier to edit the assets you need for your project
 
 
 
-![alt_text](images/AssetGraph-User43.png "image_tooltip")
+![alt_text](images/image45.png "image_tooltip")
+  \
 Introduction
 
  The Label Assets node sets labels for the given assets.
@@ -853,7 +885,7 @@ Introduction
 
 
 
-![alt_text](images/AssetGraph-User44.png "image_tooltip")
+![alt_text](images/image46.png "image_tooltip")
 
 
 
@@ -870,7 +902,8 @@ Introduction
 
 
 
-![alt_text](images/AssetGraph-User45.png "image_tooltip")
+![alt_text](images/image47.png "image_tooltip")
+ \
 Introduction 
 
 The Configure Bundle From Group node creates asset bundle settings that will be used to build AssetBundles from the collection of assets it’s given.
@@ -881,7 +914,7 @@ The Configure Bundle From Group node creates asset bundle settings that will be 
 
 
 
-![alt_text](images/AssetGraph-User46.png "image_tooltip")
+![alt_text](images/image48.png "image_tooltip")
  
 
 
@@ -901,7 +934,8 @@ The Configure Bundle From Group node creates asset bundle settings that will be 
 
 
 
-![alt_text](images/AssetGraph-User47.png "image_tooltip")
+![alt_text](images/image49.png "image_tooltip")
+ \
 Introduction 
 
 Assets that have implicit dependencies are opened and explicit asset bundle settings are created. When multiple asset bundles are given, it will create new asset bundle settings for each set of shared assets.
@@ -914,7 +948,7 @@ Assets that have implicit dependencies are opened and explicit asset bundle sett
 
 
 
-![alt_text](images/AssetGraph-User48.png "image_tooltip")
+![alt_text](images/image50.png "image_tooltip")
 
 
 
@@ -934,7 +968,8 @@ Assets that have implicit dependencies are opened and explicit asset bundle sett
 
 
 
-![alt_text](images/AssetGraph-User49.png "image_tooltip")
+![alt_text](images/image51.png "image_tooltip")
+  \
 Introduction 
 
 The Assert Unwanted Assets In Bundle node checks to see if there are any unwanted assets in an AssetBundle.
@@ -947,7 +982,7 @@ The Assert Unwanted Assets In Bundle node checks to see if there are any unwante
 
 
 
-![alt_text](images/AssetGraph-User50.png "image_tooltip")
+![alt_text](images/image52.png "image_tooltip")
 
 
 
@@ -965,7 +1000,7 @@ The Assert Unwanted Assets In Bundle node checks to see if there are any unwante
 
 
 
-![alt_text](images/AssetGraph-User51.png "image_tooltip")
+![alt_text](images/image53.png "image_tooltip")
 
 
 
@@ -981,7 +1016,7 @@ The Error node creates an error when an asset is passed to it. This node is usef
 
 
 
-![alt_text](images/AssetGraph-User52.png "image_tooltip")
+![alt_text](images/image54.png "image_tooltip")
 
 
 
@@ -998,7 +1033,7 @@ The Error node creates an error when an asset is passed to it. This node is usef
 
 
 
-![alt_text](images/AssetGraph-User53.png "image_tooltip")
+![alt_text](images/image55.png "image_tooltip")
 
 
 
@@ -1015,7 +1050,7 @@ This node builds asset bundles according to the asset bundle settings given.
 
 
 
-![alt_text](images/AssetGraph-User54.png "image_tooltip")
+![alt_text](images/image56.png "image_tooltip")
 
 
 
@@ -1035,7 +1070,8 @@ This node builds asset bundles according to the asset bundle settings given.
 
 
 
-![alt_text](images/AssetGraph-User55.png "image_tooltip")
+![alt_text](images/image57.png "image_tooltip")
+  \
 Introduction  
 
 This node builds the player for this project. By passing the output of Build Asset Bundles, you can build players that take into account the assets in the AssetBundles. If no AssetBundles are given to the Build Player node, there may be unexpected side effects such as scripts only used within the asset bundle being removed due to optimization.
@@ -1049,7 +1085,7 @@ This node builds the player for this project. By passing the output of Build Ass
 
 
 
-![alt_text](images/AssetGraph-User56.png "image_tooltip")
+![alt_text](images/image58.png "image_tooltip")
 
 
 
@@ -1068,7 +1104,7 @@ This node builds the player for this project. By passing the output of Build Ass
 
 
 
-![alt_text](images/AssetGraph-User57.png "image_tooltip")
+![alt_text](images/image59.png "image_tooltip")
 
 
 
@@ -1084,7 +1120,7 @@ The Export to Directory node copies given assets to specified directories.
 
 
 
-![alt_text](images/AssetGraph-User58.png "image_tooltip")
+![alt_text](images/image60.png "image_tooltip")
 
 
 
@@ -1102,7 +1138,7 @@ The Export to Directory node copies given assets to specified directories.
 
 
 
-![alt_text](images/AssetGraph-User59.png "image_tooltip")
+![alt_text](images/image61.png "image_tooltip")
 
 
 
@@ -1118,7 +1154,7 @@ The Mirror Directory node mirrors directories based on specified properties. It 
 
 
 
-![alt_text](images/AssetGraph-User60.png "image_tooltip")
+![alt_text](images/image62.png "image_tooltip")
 
 
 
@@ -1127,6 +1163,242 @@ The Mirror Directory node mirrors directories based on specified properties. It 
 2. Specify the mirroring settings. When set to “Keep Already Copied Files”, it will only copy files that do not already exist in the mirroring location or updated files. Files that do not exist in the mirroring location will be deleted but the directory will not be deleted. By selecting “Always Recreate Destination”, the mirroring destination will be deleted and recreated each time. 
 3. Source mirror path.  When it is not a full path, it will be considered a project-relative path.
 4. Destination mirror path. When it is not a full path, it will be considered a project-relative path.
+
+
+## Copy or Move Files 
+
+
+
+
+
+
+![alt_text](images/image63.png "image_tooltip")
+
+
+
+#### Intoroduction 
+
+Copy or Move Files copies or moves given assets to destination on specified properties.
+
+
+#### Properties
+
+
+
+
+![alt_text](images/image64.png "image_tooltip")
+ 
+
+
+
+1. Copy or Move assets.
+2. Number of directory paths to remove from source asset path. For example, if you are copying  **“Assets/Characters/Hero001/Textures/body.png”** to **“/Foo/Var”** and set Removing Directory Depth to 2, the asset is copied in **“/Foo/Var/Hero001/Textures/body.png”**.
+3. The destination path to copy or move files.
+
+
+## Import Unity Packages 
+
+
+
+
+
+
+![alt_text](images/image65.png "image_tooltip")
+
+
+
+#### Introduction 
+
+Import Unity Packages imports .unitypackages in the given directory. This node does not have input or output.
+
+
+#### Properties 
+
+
+
+
+
+
+![alt_text](images/image66.png "image_tooltip")
+
+
+
+
+1. Directory path where importing .unitypackage files are located. 
+2. Open a dialog on import.
+3. Imports all .unitypackage files in subfolders.
+
+
+## Export As UnityPackage 
+
+
+
+
+
+
+![alt_text](images/image67.png "image_tooltip")
+
+
+
+#### Introduction 
+
+Export As UnityPackage exports given assets on specified properties. Most of the options in Export As UnityPackage are based on [ExportPackageOptions](https://docs.unity3d.com/ScriptReference/ExportPackageOptions.html).
+
+
+#### Properties 
+
+
+
+
+
+
+![alt_text](images/image68.png "image_tooltip")
+
+
+
+
+1. The package name to export.
+2. The export operation will be run asynchronously and reveal the exported package file in a file browser window after the export is finished.
+3. Will recurse through any subdirectories listed and include all assets inside them.
+4. In addition to the assets paths listed, all dependent assets will be included as well.
+5. The exported package will include all library assets, ie. the project settings located in the Library folder of the project.
+
+
+# Addressables Nodes 
+
+AssetGraph offers nodes for Addressables. They will be available if you install **Addressables 1.6 or later** in your project. Addresables can be installed from Unity Package Manager just like AssetGraph.
+
+
+## Set Asset Address 
+
+
+
+
+
+
+![alt_text](images/image69.png "image_tooltip")
+
+
+
+#### Introduction 
+
+Set Asset Address sets address for incoming assets.
+
+
+#### Properties 
+
+
+
+
+
+
+![alt_text](images/image70.png "image_tooltip")
+
+
+
+
+1. Whether to set an address to this asset.
+2. The regular-expression path to match asset’s path to configure address by pattern.
+3. The relacing pattern use with ② to configure asset address. \
+For example, if you have  **“.*/Prefabs/(.*)/\.prefab”** as matching pattern and **“blocks/$1”** as replacing pattern, then have **"Assets/Prefabs/Blocks/Orange2x2.prefab"** as incoming asset, the configured asset’s address will be **”blocks/Orange2x2”**. 
+4. Whether to set assets in all lower cases.
+
+
+## Set Asset Group 
+
+
+
+
+
+
+![alt_text](images/image71.png "image_tooltip")
+
+
+
+#### Introduction 
+
+Set Asset Group configure the addressable group for incoming assets.
+
+
+#### Properties 
+
+
+
+
+
+
+![alt_text](images/image72.png "image_tooltip")
+
+
+
+
+1. The Group to add incoming assets to.
+
+
+## Set Asset Label 
+
+
+
+
+
+
+![alt_text](images/image73.png "image_tooltip")
+
+
+
+#### Introduction 
+
+Set Asset Label configures Addressable labels for incoming assets.
+
+
+#### Properties 
+
+
+
+
+
+
+![alt_text](images/image74.png "image_tooltip")
+
+
+
+
+1. Whether to overwrite labels. If set to false, the node will append labels.
+2. Labels to set. * can be used to set group name as a label. “,” can be used to set multiple labels. 
+
+
+## Build Addressable Assets 
+
+
+
+
+
+
+![alt_text](images/image75.png "image_tooltip")
+
+
+
+#### Introduction 
+
+Build Addressable Assets performs building of Addressable assets.
+
+
+#### Properties 
+
+
+
+
+
+
+![alt_text](images/image76.png "image_tooltip")
+
+
+
+
+1. Profile to use Addressable for this build.
+2. The build script to use for this build.
+3. Whether to perform an update of the last build.
+4. Specify the Content State File to update.
 
 
 # Advanced Topics 
@@ -1146,9 +1418,10 @@ Built-in Nodes have many uses, but you might also want to create a node that per
 
 
 
-![alt_text](images/AssetGraph-User61.png "image_tooltip")
+![alt_text](images/image77.png "image_tooltip")
 To implement custom nodes, create a class that inherits from Node. Custom nodes also need to have the CustomNode attribute. The CustomNode attribute specifies the display position (menu hierarcy, sort order). For example, the settings of custom node scripts generated from the menu look like this:
 
+ \
 [CustomNode("Custom/MyNode", 1000)]
 
 For more on the node class, please refer to the [API documentation](http://unity3d-jp.github.io/AssetGraph/index.html).
@@ -1158,13 +1431,20 @@ For more on the node class, please refer to the [API documentation](http://unity
 
 You can categorize assets based on type or file path with [Split By Filter](#split-by-filter), but you might want to have other filters too. For example, you might want to only get textures with an alpha channel.  In these cases, you can add custom filters. Go to Menu > Window > Asset Graph > Create Node Script > Filter Script. A custom filter script will be created under the UnityEngine.AssetBundleGraph / Generated directory. You can rename and move the spawned script. When a custom filter is added, a drop down menu to add filter options will be available by clicking on the + in Split By Filter. 
 
-![alt_text](images/AssetGraph-User62.png "image_tooltip")
+ \
+
+
+
+
+
+![alt_text](images/image78.png "image_tooltip")
 
 
 To add custom filters on your own, create a class that implements the [IFilter](http://unity3d-jp.github.io/AssetGraph/interface_unity_engine_1_1_asset_bundles_1_1_graph_tool_1_1_i_filter.html) interface. Custom filters also need the CustomFilter attribute. CustomFilter attribution can be set at the GUI display name in the Filter Settings drop down menu. In the example above, it will be displayed like this:
 
 [CustomFilter("My Filter")]
 
+ \
 For more on the [IFilter](http://unity3d-jp.github.io/AssetGraph/interface_unity_engine_1_1_asset_bundles_1_1_graph_tool_1_1_i_filter.html) interface, please refer to the API documentation.
 
 
@@ -1172,6 +1452,7 @@ For more on the [IFilter](http://unity3d-jp.github.io/AssetGraph/interface_unity
 
 When you need support for custom asset types, Unity’s [ScriptedImporter](https://docs.unity3d.com/ja/current/ScriptReference/Experimental.AssetImporters.ScriptedImporter.html) can be implemented in order to import them. Create a class equipped with the IImporterSettingsConfigurator interface in order to use importers supported by ScriptedImporter in AssetGraph. Classes equipped with IImporterSettingsConfigurator control how supported custom ScriptedImporter properties are managed.  Additionally, setting the class’ CustomAssetImporterConfigurator attribute is required. The CustomAssetImporterConfigurator attribute designates a template file name for supporting the custom data type, GUI display name, and saving the default settings. For example, the attribute for an XYZImporter would look like this:
 
+ \
 [CustomAssetImporterConfigurator(typeof(XYZImporter), "XYZ", "setting.xyz")]  \
 public class XYZImportSettingsConfigurator : IAssetImporterConfigurator
 
@@ -1185,13 +1466,15 @@ Assets like Materials do not have importers, so it is difficult to edit them per
 
 
 
-![alt_text](images/AssetGraph-User63.png "image_tooltip")
+![alt_text](images/image79.png "image_tooltip")
 
 
 A Custom Modifier is a class that implements a [IModifier ](http://unity3d-jp.github.io/AssetGraph/interface_unity_engine_1_1_asset_bundles_1_1_graph_tool_1_1_i_modifier.html)interface, and has the CustomModifier attribute. Specify the type the modifier will change and the modifier name that will be displayed in the GUI.
 
+ \
 [CustomModifier("MyModifier", typeof(RenderTexture))]
 
+ \
 For more details on the [IModifier ](http://unity3d-jp.github.io/AssetGraph/interface_unity_engine_1_1_asset_bundles_1_1_graph_tool_1_1_i_modifier.html)interface, please refer to the API documentation.
 
 
@@ -1205,7 +1488,8 @@ Go to Menu > Window > Asset Graph > Create Node Script > PrefabBuilder Script to
 
 
 
-![alt_text](images/AssetGraph-User64.png "image_tooltip")
+![alt_text](images/image80.png "image_tooltip")
+ \
 Custom PrefabBuilders require the CustomPrefabBuilder attribute, like other custom scripts. Specify the GUI display name of PrefabBuilders from CustomPrefabBuilder. In the example above, these attributes are set. 
 
 [CustomPrefabBuilder("MyPrefabBuilder")]
@@ -1235,13 +1519,15 @@ Go to Menu > Window > Asset Graph > Create Node Script > AssetGenerator Script t
 
 
 
-![alt_text](images/AssetGraph-User65.png "image_tooltip")
+![alt_text](images/image81.png "image_tooltip")
 
 
 AssetGenerator, like other custom scripts, need to have the CustomAssetGenerator attribute. Specify the AssetGenerator’s GUI display name and version from CustomAssetGenerator. In the example above, these attributes were given. 
 
+ \
 [CustomAssetGenerator("My Generator", "v1.0")]
 
+ \
 To create an AssetGenerator, create a class that implements the [IAssetGenerator](http://unity3d-jp.github.io/AssetGraph/interface_unity_engine_1_1_asset_bundles_1_1_graph_tool_1_1_i_asset_generator.html) interface.  For details on [IAssetGenerator](http://unity3d-jp.github.io/AssetGraph/interface_unity_engine_1_1_asset_bundles_1_1_graph_tool_1_1_i_asset_generator.html), please refer to the API documentation.
 
 
@@ -1262,17 +1548,23 @@ When you are extending editors and custom menus on your own, you may want to run
 
 ## Use with AssetBundle Browser 
 
-![alt_text](images/AssetGraph-User66.png "image_tooltip")
+
+## 
 
 
-The [AssetBundle Browser](https://docs.unity3d.com/Manual/AssetBundles-Browser.html) is a tool that lets you set asset bundles, check the content of asset bundles, and build them. You can get the AssetBundle Browser from [Github](https://github.com/Unity-Technologies/AssetBundles-Browser) or the [Asset Store](https://www.assetstore.unity3d.com/en/#!/content/93571) and it will work on Unity 5.6 and later.
+
+
+![alt_text](images/image82.png "image_tooltip")
+
+
+The [AssetBundle Browser](https://docs.unity3d.com/Manual/AssetBundles-Browser.html) is a tool that lets you set asset bundles, check the content of asset bundles, and build them. You can install the AssetBundle Browser from Unity Package Manager.
 
 When you want to check files included in asset bundles that were set by AssetGraph, you can use AssetGraph with the AssetBundle Browser. After installing AssetBundle Browser and AssetGraph into your project, you can select the graph from the project settings in AssetBundle Browser’s drop down menu. After selecting, you can check the asset bundle settings set by AssetGraph. 
 
 
 
 
-![alt_text](images/AssetGraph-User67.png "image_tooltip")
+![alt_text](images/image83.png "image_tooltip")
 
 
 In addition, since asset bundle settings on the GraphTool side are set by graphs, they are viewable, but not editable, in the AssetBundle Browser.
@@ -1300,9 +1592,3 @@ If you are sharing your project using version control systems, here is a quick g
 
 
 *   Everything under SavedSettings
-
-## Document revision history
- 
-|Date|Reason|
-|---|---|
-|July 2, 2019|Unedited. Published to package.|
